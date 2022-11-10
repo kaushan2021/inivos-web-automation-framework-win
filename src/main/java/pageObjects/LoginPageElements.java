@@ -1,9 +1,10 @@
 package pageObjects;
 
+import utils.Constants;
 import utils.ElementFetch;
 
 public interface LoginPageElements {
-    String loginText = "//*[@id='ap_email']";
-    String emailAddress = "nomeshd@gmail.com";
+    String userNameTextBox = "//*[@id='ap_email']";
+    String emailAddress = Constants.EMAIL; // "nomeshd@gmail.com";
     String continue_button = "//*[@id=\"continue\"]";
 }

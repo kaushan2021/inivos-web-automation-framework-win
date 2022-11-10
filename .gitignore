@@ -1,4 +1,6 @@
 # Project exclude paths
 /target/classes/
 /target/test-classes/
-.idea
+/target/
+/reports/*.*
+.idea/

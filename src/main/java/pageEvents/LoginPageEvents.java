@@ -11,13 +11,13 @@ public class LoginPageEvents {
         ElementFetch elementFetch = new ElementFetch();
         BaseTest.logger.info("Verifying that the login page is loaded or not..!");
         Assert.assertTrue(elementFetch.getWebElementsList("XPATH",
-                LoginPageElements.loginText).size() > 0,
+                LoginPageElements.userNameTextBox).size() > 0,
                 "Login Page did not open!");
     }
 
     public void enterEmailId(String email){
         BaseTest.logger.info("Entering the Email ID..!");
-        new ElementFetch().getWebElement("XPATH", LoginPageElements.emailAddress).sendKeys(email);
+        new ElementFetch().getWebElement("XPATH", LoginPageElements.userNameTextBox).sendKeys(email);
     }
 
 }
