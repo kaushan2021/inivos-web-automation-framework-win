@@ -6,7 +6,7 @@ import utils.BaseTest;
 public class SampleTest extends BaseTest {
 
     @Test
-    public void samplemethodForEmailEntering(){
+    public void samplemethodForEmailEntering() {
         HomePageEvents homePageEvents = new HomePageEvents();
         homePageEvents.clickOnSignInButton();
 

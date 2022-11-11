@@ -16,12 +16,23 @@ public class HomePageEvents {
 
     public void clickOnSignInButton(){
         ElementFetch elementFetch = new ElementFetch();
-        WebDriverWait wait = new WebDriverWait(BaseTest.getDriver(),Duration.ofSeconds(5));
+        WebDriverWait wait = new WebDriverWait(BaseTest.getDriver(),Duration.ofSeconds(10));
 //        wait.until(ExpectedConditions.presenceOfElementLocated(
 //                By.xpath(HomePageElements.signInButton))).click();
 
         wait.until(ExpectedConditions.elementToBeClickable(
                 elementFetch.getWebElement("XPATH", HomePageElements.signInButton))).click();
+
+    }
+
+    public void clickOnSignUpButton(){
+        ElementFetch elementFetch = new ElementFetch();
+        WebDriverWait wait = new WebDriverWait(BaseTest.getDriver(),Duration.ofSeconds(10));
+//        wait.until(ExpectedConditions.presenceOfElementLocated(
+//                By.xpath(HomePageElements.signInButton))).click();
+
+        wait.until(ExpectedConditions.elementToBeClickable(
+                elementFetch.getWebElement("XPATH", HomePageElements.signUpButton))).click();
 
     }
 }

@@ -7,7 +7,7 @@
     <test name="Regression">
         <parameter name="browserName" value="chrome"/>
         <classes>
-            <class name="SampleTest"/>
+            <class name="EmailValidation"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
